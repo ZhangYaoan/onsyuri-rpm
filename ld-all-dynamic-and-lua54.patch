@@ -1,0 +1,22 @@
+diff -uNr ./OnscripterYuri-0.7.5beta2.orig/CMakeLists.txt ./OnscripterYuri-0.7.5beta2/CMakeLists.txt
+--- ./OnscripterYuri-0.7.5beta2.orig/CMakeLists.txt	2024-11-30 19:52:52.000000000 +0800
++++ ./OnscripterYuri-0.7.5beta2/CMakeLists.txt	2025-01-31 10:31:25.590475117 +0800
+@@ -50,14 +50,13 @@
+         pkg_check_modules(JPEG REQUIRED libjpeg)
+ 
+         target_include_directories(${TARGET_NAME} PRIVATE
+-            /usr/include/lua5.3
++            /usr/include/lua
+         )
+         target_link_libraries(${TARGET_NAME} PRIVATE
+-            -Wl,-Bstatic # avoid libjpeg.so.8 
+-            ${JPEG_STATIC_LIBRARIES} 
+-            bz2
+-            lua5.3
+             -Wl,-Bdynamic
++            ${JPEG_LIBRARIES} 
++            bz2
++            lua
+             dl
+             ${SDL2_LIBRARIES}
+             ${SDL2_TTF_LIBRARIES}
