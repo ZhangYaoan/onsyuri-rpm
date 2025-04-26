@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 %global forgeurl https://github.com/YuriSizuku/OnscripterYuri
-Version:    0.7.5beta2
+Version:    0.7.5beta3
 %forgemeta
 
 Name:       onsyuri
@@ -11,7 +11,7 @@ Summary:    An enhancement ONScripter project porting to many platforms, especia
 License:    GPLv2
 URL:        %{forgeurl}
 Source0:    %{forgesource}
-Patch0:     ld-all-dynamic-and-lua54.patch
+# Patch0:     ld-all-dynamic-and-lua54.patch
 
 BuildRequires:  gcc, g++, make, cmake
 BuildRequires:  SDL2-devel, SDL2_ttf-devel, SDL2_image-devel, SDL2_mixer-devel
