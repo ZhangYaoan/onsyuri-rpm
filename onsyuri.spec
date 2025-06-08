@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 %global forgeurl https://github.com/YuriSizuku/OnscripterYuri
-Version:    0.7.5beta4
+Version:    0.7.5beta5
 %forgemeta
 
 Name:       onsyuri
